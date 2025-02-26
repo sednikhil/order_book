@@ -19,7 +19,7 @@ void runTests() {
     }
 
     // Test case 2: Trade Orders
-    maintain_book(Action::TRADE, "order1", "order2", Side::BUY, 5, 0);
+    maintain_book(Action::TRADE, "order1", "order2", Side::BUY, 100, 50);
 
     std::cout << "After Trade Orders:" << std::endl;
     std::cout << "Buy Book: " << std::endl;
@@ -33,7 +33,7 @@ void runTests() {
     }
 
     // Test case 3: Cancel Orders
-    maintain_book(Action::CANCEL, "order1", "", Side::BUY, 5, 0);
+    maintain_book(Action::CANCEL, "order1", "", Side::BUY, 50, 60);
 
     std::cout << "After Cancel Orders:" << std::endl;
     std::cout << "Buy Book: " << std::endl;
