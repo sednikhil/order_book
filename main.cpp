@@ -103,7 +103,7 @@ void maintain_book(Action action, string orderId, string orderId_2, Side side, i
 int main() {
     maintain_book(Action::NEW, "order1", "", Side::BUY, 10, 100);
     maintain_book(Action::NEW, "order2", "", Side::SELL, 5, 120);
-    maintain_book(Action::TRADE, "order1", "order2", Side::BUY, 5, 0);
+    maintain_book(Action::TRADE, "order1", "order2", Side::BUY, 50, 10);
 
     cout << "Buy Book: " << endl;
     for (auto &pair : buy_book) {
